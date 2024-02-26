@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Kranky&family=Merienda:wght@300..900&family=Original+Surfer&family=Over+the+Rainbow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Libre+Barcode+128+Text&family=Poor+Story&family=Snowburst+One&display=swap');
+
+body{
+    margin: 0;
+}
+
+.container{
+    font-family: "Kranky", serif;
+    border-top: none;
+    border-bottom: none;
+    max-width: 390px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+
+/* Header */
+nav{
+    font-family: "Happy Monkey", system-ui;
+    width: 100%;
+    position: relative;
+    top: -15px;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+li > a{
+    text-decoration: none;
+    color:black;
+}
+li > a:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px black;
+}
+
+.container > h1{
+    font-size: 3.75rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.2em;
+}
+
+/* Section-One Styling */
+
+.img-one{
+    background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWZwcm9lM3l6Z3l4dmQ4NWgydDN4aWR1ZmtnMXRyNm4wZjVsZWN6MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LPjIbvmPzi2JfSOdd9/giphy.gif');
+    background-size: cover;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+}
+
+.slogan{
+    font-family: "Libre Barcode 128 Text", system-ui;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 0.7em;
+    margin-bottom: 0.4em;
+}
+
+/* Section-Two Styling */
+
+.container > h2{
+    font-size: 3.75rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.img-of-guy{
+    width: 300px;
+    border-radius: 37px;
+    object-fit: cover;
+}
+
+.container > p{
+    font-family: "Poor Story", system-ui;
+    font-size: 1.895rem;
+    padding: 1em;
+    margin-bottom: 0;
+}
+
+/* Section-Three Styling */
+
+.card-one{
+    height: 310px;
+    width: 270px;
+    background-color: aqua;
+}
+
+.treats{
+    font-family: "Snowburst One", system-ui;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0.1em;
+}
+
+.stack-of-icecreams{
+    background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmxhNG44Z2w5cXh2anBoN2ltendlZ3NveWlscjIwY3NuNXdteHBhNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KasZzipEr3khqtCAIv/giphy.gif');
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* Section-Four Styling */
+
+.icecreams{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 390px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.ice-one,
+.ice-two,
+.ice-three{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-around;
+    width: 43%;
+}
+
+.ice-one > img,
+.ice-two > img,
+.ice-three > img{
+    margin: 0;
+    padding: 0.29em;
+}
+
+/* Section-Five Styling */
+
+.location{
+    font-family: "Snowburst One", system-ui;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.location-description > p{
+    font-family: "Poor Story", system-ui;
+    font-size: 2rem;
+    padding: 0.5em;
+    margin: 0;
+}
+
+
+
+/* Footer */
+
+.footer{
+    background-color: aquamarine;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
