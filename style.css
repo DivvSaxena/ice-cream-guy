@@ -19,6 +19,14 @@ body{
 
 
 /* Header */
+
+.header{
+    font-family: "Kranky", serif;
+    max-width: 390px;
+    width: 100%;
+    line-height: 1.5;
+}
+
 nav{
     font-family: "Happy Monkey", system-ui;
     width: 100%;
@@ -44,7 +52,7 @@ li > a:hover{
     text-shadow: 1px 1px black;
 }
 
-.container > h1{
+.header > h1{
     font-size: 3.75rem;
     font-weight: 400;
     text-align: center;
@@ -52,6 +60,15 @@ li > a:hover{
 }
 
 /* Section-One Styling */
+
+.section-one{
+    max-width: 390px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 .img-one{
     background: url('./assets/gifs/iceycream.gif');
@@ -71,7 +88,16 @@ li > a:hover{
 
 /* Section-Two Styling */
 
-.container > h2{
+.section-two{
+    max-width: 390px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.subcontainer > h2{
     font-size: 3.75rem;
     font-weight: 400;
     text-align: center;
@@ -83,7 +109,7 @@ li > a:hover{
     object-fit: cover;
 }
 
-.container > p{
+.section-two > p{
     font-family: "Poor Story", system-ui;
     font-size: 1.895rem;
     padding: 1em;
@@ -92,17 +118,21 @@ li > a:hover{
 
 /* Section-Three Styling */
 
-.card-one{
-    height: 310px;
-    width: 270px;
-    background-color: aqua;
+.subcontainer{
+    text-align: center;
+}
+
+.section-three > p{
+    font-size: 2rem;
+    font-family: "Happy Monkey", system-ui;
+    text-align: center;
 }
 
 .treats{
     font-family: "Snowburst One", system-ui;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 800;
-    margin: 0.1em;
+    margin: 0.5em;
 }
 
 .stack-of-icecreams{
@@ -111,6 +141,7 @@ li > a:hover{
     height: 350px;
     width: 350px;
     border-radius: 50%;
+    margin: 0 auto;
 }
 
 /* Section-Four Styling */
@@ -143,10 +174,18 @@ li > a:hover{
 
 /* Section-Five Styling */
 
+.locationoficeguy{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .location{
     font-family: "Snowburst One", system-ui;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 800;
+    margin: 0.5em 0.5em 0.2em 0.5em;
 }
 
 .location-description > p{
@@ -165,4 +204,149 @@ li > a:hover{
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
+}
+
+/* Media Queries */
+
+@media (min-width:768px) {
+    /* Header */
+    .container{
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 800px;
+        padding: 1em;
+    }
+
+    nav{
+        width: 50%;
+        top: 3px;
+    }
+
+    .header > h1{
+        font-size: 4rem;
+    }
+
+    nav > ul{
+        font-size: 1.75rem;
+    }
+
+    /* Section-One Styling */
+    .img-one{
+        background: url('./assets/gifs/iceycream.gif');
+        background-size: cover;
+        width: 390px;
+        height: 390px;
+        margin: 1em;
+        border-radius: 20%;
+    }
+    
+    .slogan{
+        font-size: 5.5rem;
+    }
+
+    /* Section-Two Styling */
+
+    .subcontainer > h2{
+        font-size: 3.75rem;
+        font-weight: 400;
+        text-align: center;
+        border-bottom: 4px solid violet;
+    }
+    
+    .section-two{
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        width: 100%;
+        padding: 2em;
+        margin: 0;
+    }
+
+    .img-of-guy{
+        width: 320px;
+        border-radius: 37px;
+        object-fit: cover;
+    }
+    
+    .section-two > p{
+        margin: 0;
+        font-size: 2rem;
+    }
+    
+
+/* Section-Three Styling */
+
+    .subcontainer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-three > p{
+        font-size: 2.75rem;
+        font-family: "Happy Monkey", system-ui;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    .treats{
+        font-family: "Snowburst One", system-ui;
+        font-size: 4rem;
+        font-weight: 800;
+        margin: 0.25em;
+        border-bottom: 4px solid violet;
+    }
+
+    .stack-of-icecreams{
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+    }
+
+
+/* Section-Four Styling */
+
+    .icecreams{
+        max-width: 800px;
+        gap: 10px;
+    }
+
+    .ice-one,
+    .ice-two,
+    .ice-three{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: space-around;
+        width: 30%;
+    }
+
+/* Section-Five Styling */
+
+    .location{
+        font-size: 3.5rem;
+        border-bottom: 4px solid violet;
+        width: 100%;
+        text-align: center;
+        margin: 1em;
+    }
+
+    .location-description > p{
+        font-family: "Poor Story", system-ui;
+        font-size: 2.5rem;
+        padding: 0.5em;
+        margin: 0;
+    }
+
+
 }
