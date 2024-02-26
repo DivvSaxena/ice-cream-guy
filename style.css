@@ -54,7 +54,7 @@ li > a:hover{
 /* Section-One Styling */
 
 .img-one{
-    background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWZwcm9lM3l6Z3l4dmQ4NWgydDN4aWR1ZmtnMXRyNm4wZjVsZWN6MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LPjIbvmPzi2JfSOdd9/giphy.gif');
+    background: url('./assets/gifs/iceycream.gif');
     background-size: cover;
     width: 390px;
     height: 390px;
@@ -106,7 +106,7 @@ li > a:hover{
 }
 
 .stack-of-icecreams{
-    background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmxhNG44Z2w5cXh2anBoN2ltendlZ3NveWlscjIwY3NuNXdteHBhNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KasZzipEr3khqtCAIv/giphy.gif');
+    background: url('./assets/gifs/dancyicey.gif');
     background-size: cover;
     height: 350px;
     width: 350px;
